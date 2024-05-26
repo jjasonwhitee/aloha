@@ -46,7 +46,7 @@ struct ConfirmationIntroView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: JoinCircleIntroView(name: $name)){
+                    NavigationLink(destination: CircleNameIntroView(name: $name)){
                         Text("Continue")
                             .font(.custom("Poppins-Bold", size: 16))
                             .frame(width: 270, height: 56)
@@ -61,7 +61,7 @@ struct ConfirmationIntroView: View {
                             .font(.custom("Poppins-Medium", size: 16))
                             .foregroundColor(.alohaBlack)
                         
-                        NavigationLink(destination: CircleNameIntroView(name: $name)){
+                        NavigationLink(destination: JoinCircleIntroView(name: $name)){
                             Text("Join Now")
                                 .font(.custom("Poppins-Bold", size: 16))
                                 .foregroundColor(.alohaDarkBlue)
